@@ -105,8 +105,7 @@ class GlobalAlignment:
             self._seq_pos_1.append(j-1)
             self._seq_pos_2.append(i-1)
             i, j = self._traceback[(i, j)]
-        self._alig
-        nment: str = self._format_alignment()
+        self._alignment: str = self._format_alignment()
         return self._alignment
 
     def _format_alignment(self):
